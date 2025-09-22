@@ -23,7 +23,7 @@ Encrypting a file:
 Choose E for encrypt.
 Enter the path to your input text file (for example, my_secret_data.txt).
 Optionally, provide an output filename (default is encrypted.json).
-The utility will display the generated encryption key. Save this key securely, as it is required for decryption if the encrypted file is moved or corrupted.
+The program will display the generated encryption key. Save this key securely, as it is required for decryption if the encrypted file is moved or corrupted.
 
 Decrypting a file:
 Choose D for decrypt.
