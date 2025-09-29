@@ -9,7 +9,7 @@ File Decryption: Decrypts previously encrypted files using a provided key or a k
 Key Generation: Automatically generates a random key for each encryption.
 Structured Storage: Encrypted data and keys are stored in a structured JSON format (.json) for easy parsing and management.
 Robust Error Handling: Includes comprehensive error handling for file operations, invalid input, and malformed encrypted files.
-User-Friendly Interface: Provides a simple command-line interface for easy interaction.
+User-Friendly Interface: Provides a simple command-line interface for easy interaction; full interface coming soon.
 
 How to Use
 
@@ -17,7 +17,7 @@ Prerequisites: Ensure you have Python 3.x installed on your system.
 
 Run the script.
 
-Follow the prompts. The utility will present you with options to encrypt or decrypt a file.
+Follow the prompts. The program will present you with options to encrypt or decrypt a file.
 
 Encrypting a file:
 Choose E for encrypt.
