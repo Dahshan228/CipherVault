@@ -12,6 +12,15 @@
 - **Simple**: Just select a file and click Start.
 - **Renamable Output**: Easily choose where to save your encrypted/decrypted files.
 
+## Supported File Types
+CipherVault works with **any file type**. It encrypts the raw binary data, so you can secure:
+- 📄 **Documents**: PDF, DOCX, TXT, XLSX
+- 🖼️ **Images**: PNG, JPG, GIF, SVG
+- 🎥 **Media**: MP4, MP3, MOV, WAV
+- 📦 **Archives**: ZIP, RAR, 7Z, TAR
+- 💻 **Executables**: EXE, MSI, BAT
+- And anything else!
+
 ## High Security Warning
 > [!WARNING]
 > If you lose your password or key file, your data is gone forever. There is no backdoor.
