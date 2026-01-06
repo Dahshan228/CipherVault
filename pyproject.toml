@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cipher-vault"
+version = "2.0.0"
+description = "A professional, secure file encryption tool."
+readme = "README.md"
+authors = [{ name = "Unknown", email = "author@example.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "cryptography",
+    "typer",
+    "rich",
+    "customtkinter",
+    "pillow",
+    "packaging"
+]
+
+[project.scripts]
+ciphervault = "cipher_vault.cli:app"
+ciphervault-gui = "cipher_vault.gui:main"
+
+[project.urls]
+Homepage = "https://github.com/Dahshan228/CipherVault"

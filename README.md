@@ -1,32 +1,42 @@
-CipherVault: Secure File Encryption/Decryption program
+# CipherVault
 
-CipherVault is a Python-based program designed for encrypting and decrypting text files using a simple byte-shifting cipher. It serves as an educational example to demonstrate fundamental encryption principles, file handling, and robust programming practices.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
 
-Features
+**CipherVault** is a professional, secure file encryption tool.
 
-File Encryption: Encrypts the content of a given text file.
-File Decryption: Decrypts previously encrypted files using a provided key or a key stored within the encrypted file.
-Key Generation: Automatically generates a random key for each encryption.
-Structured Storage: Encrypted data and keys are stored in a structured JSON format (.json) for easy parsing and management.
-Robust Error Handling: Includes comprehensive error handling for file operations, invalid input, and malformed encrypted files.
-User-Friendly Interface: Provides a simple command-line interface for easy interaction; full interface coming soon.
+## Key Features
 
-How to Use
+- **Smart Dashboard**: Automatically detects if you want to Encrypt or Decrypt.
+- **Secure**: Uses industry-standard AES-256 encryption.
+- **Simple**: Just select a file and click Start.
+- **Renamable Output**: Easily choose where to save your encrypted/decrypted files.
 
-Prerequisites: Ensure you have Python 3.x installed on your system.
+## High Security Warning
+> [!WARNING]
+> If you lose your password or key file, your data is gone forever. There is no backdoor.
 
-Run the script.
+## How to use
 
-Follow the prompts. The program will present you with options to encrypt or decrypt a file.
+### 1. Run the Application
+Simply double-click `CipherVault.exe`. No installation required.
 
-Encrypting a file:
-Choose E for encrypt.
-Enter the path to your input text file (for example, my_secret_data.txt).
-Optionally, provide an output filename (default is encrypted.json).
-The program will display the generated encryption key. Save this key securely, as it is required for decryption if the encrypted file is moved or corrupted.
+### 2. Encrypt a File
+1.  Click **Browse Files** and select any file (image, text, pdf, etc.).
+2.  The app will switch to **Green (Secure Mode)**.
+3.  Enter a password (or check "Use Key File" for advanced security).
+4.  (Optional) Click **Change Output** to rename the destination file.
+5.  Click **LOCK NOW**.
 
-Decrypting a file:
-Choose D for decrypt.
-Enter the path to your encrypted JSON file (for example, encrypted.json).
-Optionally, provide an output filename for the decrypted data (default is decrypted.txt).
-You will be prompted to enter the decryption key. You can either type the comma-separated key you saved earlier or press Enter to use the key stored within the encrypted.json file itself.
+### 3. Decrypt a File
+1.  Click **Browse Files** and select an encrypted file (e.g., `.enc`).
+2.  The app will switch to **Red (Unlock Mode)**.
+3.  Enter the password you used to encrypt it (or select the Key File).
+4.  Click **UNLOCK NOW**.
+
+## Advanced Usage (Developers)
+If you want to run from source code:
+```bash
+python launcher.py
+```
+This script will automatically check and install any missing dependencies.
