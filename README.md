@@ -32,7 +32,7 @@ Simply double-click `CipherVault.exe`. No installation required.
 ### 2. Encrypt a File
 1.  Click **Browse Files** and select any file (image, text, pdf, etc.).
 2.  The app will switch to **Green (Secure Mode)**.
-3.  Enter a password (or check "Use Key File" for advanced security).
+3.  Enter a password or check "Use Key File" for advanced security (using key file is recommended).
 4.  (Optional) Click **Change Output** to rename the destination file.
 5.  Click **LOCK NOW**.
 
