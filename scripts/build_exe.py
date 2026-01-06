@@ -9,17 +9,28 @@ def build():
     # Get CustomTkinter path for data inclusion
     ctk_path = os.path.dirname(customtkinter.__file__)
     
-    PyInstaller.__main__.run([
+    # Determine separator based on OS
+    if os.name == 'nt':
+        sep = ';'
+    else:
+        sep = ':'
+
+    args = [
         'launcher.py',
         '--name=CipherVault',
         '--onefile',
         '--windowed',
-        '--add-data=cipher_vault;cipher_vault',
-        f'--add-data={ctk_path};customtkinter', # Explicitly add CustomTkinter assets
+        f'--add-data=cipher_vault{sep}cipher_vault',
+        f'--add-data={ctk_path}{sep}customtkinter',
         '--hidden-import=PIL',
         '--clean',
         '--noconfirm',
-    ])
+    ]
+
+    # Mac specific optimization (optional, produces .app but --onefile is usually fine too)
+    # PyInstaller usually handles basic .app creation on Mac automatically with --windowed
+    
+    PyInstaller.__main__.run(args)
     
     print("\nBuild complete! Check the 'dist' folder for CipherVault.exe")
 

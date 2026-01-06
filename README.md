@@ -44,8 +44,14 @@ Simply double-click `CipherVault.exe`. No installation required.
 4.  Click **UNLOCK NOW**.
 
 ## Advanced Usage (Developers)
-If you want to run from source code:
+If you want to run from source code (Windows, Mac, or Linux):
 ```bash
-python launcher.py
+python scripts/launcher.py
 ```
 This script will automatically check and install any missing dependencies.
+
+### Building for Mac
+If you are on macOS and want to build a standalone app:
+1.  Install Python 3.
+2.  Run `python scripts/build_exe.py`.
+3.  Look in `dist/` for `CipherVault.app` or the executable.
