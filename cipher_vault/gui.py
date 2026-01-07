@@ -95,7 +95,9 @@ class SmartCipherApp(ctk.CTk):
             self.lbl_password.configure(text="Enter Password to Decrypt")
             
             # Default Output
-            self.current_output = self.current_file.with_suffix("")
+            # User wants "filename - Decrypted.ext"
+            base_path = self.current_file.with_suffix("")
+            self.current_output = base_path.with_name(f"{base_path.stem} - Decrypted{base_path.suffix}")
             
         else:
             self.mode = "encrypt"

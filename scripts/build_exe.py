@@ -16,10 +16,11 @@ def build():
         sep = ':'
 
     args = [
-        'launcher.py',
+        'scripts/launcher.py',
         '--name=CipherVault',
         '--onefile',
         '--windowed',
+        '--paths=.',
         f'--add-data=cipher_vault{sep}cipher_vault',
         f'--add-data={ctk_path}{sep}customtkinter',
         '--hidden-import=PIL',
